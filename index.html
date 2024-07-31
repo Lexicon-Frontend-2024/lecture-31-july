@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="welcome"></h1>
+    <section class="form-container" id="formContainer">
+        <form class="form" id="loginForm">
+            <h3 class="form__title">Login</h3>
+            <h5 class="d-none" id="loginErrorMsg"></h5>
+            <div class="form__group">
+                <label>Username: *</label>
+                <input type="text" id="loginUsername" >
+            </div>
+            <div class="form__group">
+                <label>Password: *</label>
+                <input type="password" id="loginPassword" >
+            </div>
+            <button class="form__btn" id="loginBtn">Login</button>
+            <button class="form__btn redirect__btn" id="toRegisterBtn">Register account</button>
+        </form>
+
+        <form class="form d-none" id="registrationForm">
+            <h3 class="form__title">Register</h3>
+            <h5 class="d-none" id="registerErrorMsg"></h5>
+            <div class="form__group">
+                <label>Name: *</label>
+                <input type="text" id="registerName">
+            </div>
+            <div class="form__group">
+                <label>Username: *</label>
+                <input type="text" id="registerUsername">
+            </div>
+            <div class="form__group">
+                <label>Email: *</label>
+                <input type="email" id="registerEmail">
+            </div>
+            <div class="form__group">
+                <label>Password: *</label>
+                <input type="password" id="registerPassword1">
+            </div>
+            <div class="form__group">
+                <label>Confirm Password: *</label>
+                <input type="password" id="registerPassword2">
+            </div>
+            
+            <button class="form__btn" id="regBtn">Register</button>
+            <button class="form__btn redirect__btn" id="toLoginBtn">Go to login</button>
+        </form>
+    </section>
+
+    <script src="./users.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
